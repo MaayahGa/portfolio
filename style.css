@@ -1,3 +1,11 @@
 body {
   font: 100%/1.5 system-ui;
 }
+
+img {
+    max-width: 300px; /* sets a maximum width for your image */
+    width: 100%;      /* makes it scale down on smaller screens */
+    height: auto;     /* keeps aspect ratio so it doesn’t stretch */
+    display: block;   /* removes tiny bottom spacing */
+    margin: 0 auto;   /* centers the image horizontally */
+}
