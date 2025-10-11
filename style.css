@@ -1,18 +1,18 @@
-/* Step 2.4 — Define global accent color */
+/* Global accent color */
 html {
   --color-accent: oklch(65% 50% 0);
   --color-accent-hover: oklch(80% 50% 0);
   accent-color: var(--color-accent);
 }
 
-/* Step 1 — content width control */
+/* Step 1  */
 body {
   font: 100%/1.5 system-ui;
   max-width: 100ch;
   margin-inline: max(1em, (100% - 100ch) / 2);
 }
 
-/* Step 2 — navigation bar styling */
+/* Step 2 */
 nav {
   display: flex;
   border-bottom: 1px solid oklch(80% 3% 200);
@@ -72,7 +72,7 @@ button {
 button:hover {
   background-color: var(--color-accent-hover);
 }
-/* Step 3 — contact form grid layout */
+/* Step 3  */
 form {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -91,57 +91,51 @@ button[type="submit"] {
   justify-self: start;
 }
 
-/* Step 4 — Projects page styling */
+/* Step 4  */
 
-/* 4.2: Make the projects container a responsive grid */
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr)); /* flexible columns */
-  gap: 1em;  /* spacing between articles */
-  margin: 1em 0; /* optional top/bottom spacing */
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
+  margin: 1em 0;
 }
 
-/* 4.3: Align content inside each article using subgrid */
 .projects article {
   display: grid;
-  grid-template-rows: subgrid;  /* align headings, images, and paragraphs across articles */
-  grid-row: span 3;             /* each article spans 3 rows in the subgrid */
-  gap: 0.5em;                   /* spacing inside the article */
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 0.5em;
 }
 
-/* Remove default heading margin to prevent excessive spacing */
 .projects article h2 {
   margin: 0;
 }
 
-/* Images inside articles */
 .projects article img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Paragraphs inside articles */
 .projects article p {
   margin: 0;
 }
 
-/* 4.4: Headings hierarchy and readability */
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.1;       /* slightly tighter line height for headings */
-  text-wrap: balance;      /* even out lines for better readability */
+  line-height: 1.1;
+  text-wrap: balance;
 }
 
 h1 {
-  font-size: 4rem;         /* make main heading significantly larger */
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 1.5rem;       /* slightly smaller than h1, still prominent */
+  font-size: 1.5rem;
 }
 
 
-/* === CV PAGE STYLING === */
+/* CV PAGE */
 
 h1 {
   font-size: 2.5rem;
@@ -152,7 +146,6 @@ h1 {
   text-wrap: balance;
 }
 
-/* Make all headings more visually distinct */
 h2, h3 {
   line-height: 1.1;
   text-wrap: balance;
@@ -169,27 +162,23 @@ h3 {
   margin-bottom: 0.25em;
 }
 
-/* Section layout */
 section {
   margin-bottom: 2em;
   padding-bottom: 1em;
   border-bottom: 1px solid oklch(85% 2% 200);
 }
 
-/* Article entries inside sections */
 article {
   margin-top: 1em;
   padding-left: 1em;
   border-left: 4px solid oklch(85% 2% 200);
 }
 
-/* Make time and small details less prominent */
 time {
   font-size: 0.9em;
   color: oklch(45% 3% 200);
 }
 
-/* Skills list */
 ul {
   list-style: none;
   padding-left: 0;
@@ -204,7 +193,6 @@ ul li {
   border-radius: 0.3em;
 }
 
-/* Responsive tweaks */
 @media (max-width: 600px) {
   h1 {
     font-size: 2rem;
@@ -213,4 +201,59 @@ ul li {
   article {
     padding-left: 0.5em;
   }
+}
+
+/* PROJECTS PAGE */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1.5em;
+  margin-top: 2em;
+  align-items: start;
+}
+
+.projects article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  background-color: oklch(from var(--color-accent) 97% 3% h);
+  border: 1px solid oklch(85% 3% 200);
+  border-radius: 0.75em;
+  padding: 1em;
+  box-shadow: 0 2px 6px oklch(90% 2% 200 / 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.projects article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px oklch(70% 3% 200 / 0.4);
+}
+
+.projects h2 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.3rem;
+  color: var(--color-accent);
+  text-align: center;
+}
+
+.projects img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.projects p {
+  font-size: 0.95rem;
+  color: oklch(35% 2% 200);
+  line-height: 1.4;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 1em;
+  color: oklch(30% 3% 200);
 }
