@@ -1,11 +1,10 @@
 console.log("IT’S ALIVE!");
 
-
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 
-// Step 3
+//Step 3
 
 let pages = [
   { url: "", title: "Home" },
@@ -16,11 +15,10 @@ let pages = [
   { url: "https://github.com/MaayahGa", title: "GitHub" },
 ];
 
-
 const BASE_PATH =
   location.hostname === "localhost" || location.hostname === "127.0.0.1"
     ? "/"
-    : "/portfolio/"; 
+    : "/portfolio/";
 
 let nav = document.createElement("nav");
 document.body.prepend(nav);
@@ -38,9 +36,6 @@ for (let p of pages) {
 
   a.toggleAttribute("target", a.host !== location.host);
 
-
   nav.append(a);
-
-
   nav.insertAdjacentText("beforeend", " | ");
 }
