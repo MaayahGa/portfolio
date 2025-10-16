@@ -77,3 +77,20 @@ select.addEventListener("input", (event) => {
   setColorScheme(value);
   localStorage.colorScheme = value;
 });
+
+
+//Contact updates
+const form = document.querySelector("form.contact-form");
+form?.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const data = new FormData(form);
+  const params = [];
+
+  for (let [name, value] of data) {
+    params.push(`${encodeURIComponent(name)}=${encodeURIComponent(value)}`);
+  }
+
+  const url = `${form.action}?${params.join("&")}`;
+  location.href = url;
+});
