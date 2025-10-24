@@ -1,0 +1,18 @@
+
+[
+  {
+    "title": "Personal Portfolio",
+    "image": "../images/download.png",
+    "description": "A responsive portfolio website built with HTML, CSS, and JavaScript."
+  },
+  {
+    "title": "Data Visualization Dashboard",
+    "image": "../images/download.png",
+    "description": "A dashboard using Chart.js and real-time API data."
+  },
+  {
+    "title": "Weather App",
+    "image": "../images/download.png",
+    "description": "Fetches live weather data from OpenWeatherMap and displays it beautifully."
+  }
+]
