@@ -285,3 +285,24 @@ a:hover {
   font-size: 0.8em;
   font-family: inherit;
 }
+
+/* fix github stat layout to horizontal */
+
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  text-align: center;
+}
+
+#profile-stats dt {
+  grid-row: 1;
+  font-weight: bold;
+}
+
+#profile-stats dd {
+  grid-row: 2;
+  margin: 0;
+  font-size: 1.5rem;
+}
