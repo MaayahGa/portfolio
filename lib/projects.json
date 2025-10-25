@@ -2,25 +2,25 @@
   {
     "title": "Which Grogery Store Has the best Priced Protein-Dense Brands",
     "year": 2025,
-    "image": "../images/final_1.png",
+    "image": "images/final_1.png",
     "description": "This is a scatter plot that shows the amount of protein-dense brands each major grocery store holds."
   },
   {
     "title": "NBA Teams Miles Traveled Per Year",
     "year": 2025,
-    "image": "../images/000016.png",
+    "image": "images/000016.png",
     "description": "This is a vizualization that demonstrates how miles travled through NBA teams has changed through the years."
   },
   {
     "title": "NBA Teams Total Times Traveled",
     "year": 2025,
-    "image": "../images/000012.png",
+    "image": "images/000012.png",
     "description": "Demonstrates the amount of times teams had to travel to their games."
   },
   {
     "title": "NBA Teams Schedule Impacted Wins",
     "year": 2025,
-    "image": "../images/000018.png",
+    "image": "images/000018.png",
     "description": "This graph shows which teams and how many wins or losses they had were impacted due to schedule reasons."
   },
   {

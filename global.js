@@ -110,6 +110,11 @@ export async function fetchJSON(url) {
 }
 
 export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+  const BASE_PATH =
+    location.hostname === "localhost" || location.hostname === "127.0.0.1"
+      ? ""
+      : "/portfolio/";
+      
   containerElement.innerHTML = '';
 
   projects.forEach((project) => {
@@ -117,8 +122,8 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     article.innerHTML = `
       <${headingLevel}>${project.title}</${headingLevel}>
       <p class="year">${project.year}</p>
-      <img src="${project.image}" alt="${project.title}">
-      <p>${project.description}</p>
+      <img src="${BASE_PATH}${project.image}" alt="${project.title}">
+      <p class="description">${project.description}</p>
     `;
     containerElement.appendChild(article);
   });
