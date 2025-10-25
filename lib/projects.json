@@ -26,49 +26,49 @@
   {
     "title": "Machine Learning Model",
     "year": 2024,
-    "image": "../images/download.png",
+    "image": "images/download.png",
     "description": "Developed a predictive model using Python and scikit-learn to analyze customer behavior patterns."
   },
   {
     "title": "Mobile Fitness Tracker",
     "year": 2023,
-    "image": "../images/download.png",
+    "image": "images/download.png",
     "description": "A mobile app built with React Native to track workouts, calories, and fitness goals."
   },
   {
     "title": "Task Management System",
     "year": 2022,
-    "image": "../images/download.png",
+    "image": "images/download.png",
     "description": "A collaborative task management tool with real-time updates using WebSockets and Node.js."
   },
   {
     "title": "Social Media Analytics Tool",
     "year": 2023,
-    "image": "../images/download.png",
+    "image": "images/download.png",
     "description": "Analyzes social media engagement metrics and provides insights using data visualization techniques."
   },
   {
     "title": "Chat Application",
     "year": 2022,
-    "image": "../images/download.png",
+    "image": "images/download.png",
     "description": "Real-time chat application with group messaging, file sharing, and emoji support."
   },
   {
     "title": "Budget Tracking App",
     "year": 2024,
-    "image": "../images/download.png",
+    "image": "images/download.png",
     "description": "Personal finance management app that helps users track expenses, set budgets, and analyze spending habits."
   },
   {
     "title": "Inventory Management System",
     "year": 2022,
-    "image": "../images/download.png",
+    "image": "images/download.png",
     "description": "Database-driven system for tracking product inventory, orders, and supply chain logistics."
   },
   {
     "title": "Recipe Finder Website",
     "year": 2023,
-    "image": "../images/download.png",
+    "image": "images/download.png",
     "description": "A web app that suggests recipes based on available ingredients using an external recipe API."
   }
 ]
