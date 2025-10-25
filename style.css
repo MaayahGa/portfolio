@@ -11,14 +11,12 @@ nav a.current {
   color: var(--color-accent);
 }
 
-/* Step 1  */
 body {
   font: 100%/1.5 system-ui;
   max-width: 100ch;
   margin-inline: max(1em, (100% - 100ch) / 2);
 }
 
-/* Step 2 */
 nav {
   display: flex;
   border-bottom: 1px solid oklch(80% 3% 200);
@@ -78,7 +76,7 @@ button {
 button:hover {
   background-color: var(--color-accent-hover);
 }
-/* Step 3  */
+
 form {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -97,7 +95,7 @@ button[type="submit"] {
   justify-self: start;
 }
 
-/* Step 4  */
+
 
 .projects {
   display: grid;
@@ -109,7 +107,7 @@ button[type="submit"] {
 .projects article {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 3;
+  grid-row: span 4;
   gap: 0.5em;
 }
 
@@ -222,7 +220,7 @@ ul li {
 .projects article {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 3;
+  grid-row: span 4;
   background-color: oklch(from var(--color-accent) 97% 3% h);
   border: 1px solid oklch(85% 3% 200);
   border-radius: 0.75em;
@@ -243,11 +241,18 @@ ul li {
   text-align: center;
 }
 
+.projects .year {
+  font-size: 0.9rem;
+  color: oklch(50% 3% 200);
+  margin: 0;
+  text-align: center;
+}
+
 .projects img {
   width: 100%;
   height: auto;
   border-radius: 0.5em;
-  margin-bottom: 0.5em;
+  margin: 0;
 }
 
 .projects p {
@@ -255,6 +260,7 @@ ul li {
   color: oklch(35% 2% 200);
   line-height: 1.4;
   text-align: center;
+  margin: 0;
 }
 
 h1 {

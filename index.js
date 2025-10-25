@@ -10,7 +10,7 @@ async function displayLatestProjects() {
 displayLatestProjects();
 
 async function displayGitHubStats() {
-  const githubData = await fetchGitHubData('MaayahGa'); // Replace with your GitHub username
+  const githubData = await fetchGitHubData('MaayahGa');
   const profileStats = document.querySelector('#profile-stats');
   
   if (profileStats) {
