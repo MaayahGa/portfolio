@@ -1,5 +1,17 @@
 [
   {
+    "title": "Democratic States Have had a Larger Growth Rate in Abortions",
+    "year": 2025,
+    "image": "images/uphold_kde_plot.png",
+    "description": "Percent rate of change of abortion rate between red and blue states."
+  },
+  {
+    "title": "Red states have had larger growth in abortion clinics",
+    "year": 2025,
+    "image": "images/oppose_kde_plot.png",
+    "description": "Percent growth ao the amount of Abortion Clinics has grown more in Red states than Blue states."
+  },
+  {
     "title": "Which Grogery Store Has the best Priced Protein-Dense Brands",
     "year": 2025,
     "image": "images/final_1.png",
@@ -22,18 +34,6 @@
     "year": 2025,
     "image": "images/000018.png",
     "description": "This graph shows which teams and how many wins or losses they had were impacted due to schedule reasons."
-  },
-  {
-    "title": "Democratic States Have had a Larger Growth Rate in Abortions",
-    "year": 2025,
-    "image": "images/uphold_kde_plot.png",
-    "description": "Percent rate of change of abortion rate between red and blue states."
-  },
-  {
-    "title": "Red states have had larger growth in abortion clinics",
-    "year": 2025,
-    "image": "images/oppose_kde_plot.png",
-    "description": "Percent growth ao the amount of Abortion Clinics has grown more in Red states than Blue states."
   },
   {
     "title": "Task Management System",
