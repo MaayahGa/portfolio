@@ -364,3 +364,27 @@ a:hover {
   font-style: normal;
   font-size: 0.9em;
 }
+
+/* Search Bar */
+.searchBar {
+  width: 100%;
+  max-width: 40em;
+  margin: 0 auto 2em;
+  display: block;
+  padding: 0.75em 1em;
+  font-size: 1rem;
+  border: 2px solid oklch(85% 3% 200);
+  border-radius: 0.5em;
+  background-color: white;
+  transition: border-color 0.2s;
+}
+
+.searchBar:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px oklch(from var(--color-accent) 95% 10% h);
+}
+
+.searchBar::placeholder {
+  color: oklch(60% 3% 200);
+}
