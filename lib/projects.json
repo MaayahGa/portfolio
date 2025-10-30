@@ -24,16 +24,16 @@
     "description": "This graph shows which teams and how many wins or losses they had were impacted due to schedule reasons."
   },
   {
-    "title": "Machine Learning Model",
-    "year": 2024,
-    "image": "images/download.png",
-    "description": "Developed a predictive model using Python and scikit-learn to analyze customer behavior patterns."
+    "title": "Democratic States Have had a Larger Growth Rate in Abortions",
+    "year": 2025,
+    "image": "images/uphold_kde_plot.png",
+    "description": "Percent rate of change of abortion rate between red and blue states."
   },
   {
-    "title": "Mobile Fitness Tracker",
-    "year": 2023,
-    "image": "images/download.png",
-    "description": "A mobile app built with React Native to track workouts, calories, and fitness goals."
+    "title": "Red states have had larger growth in abortion clinics",
+    "year": 2025,
+    "image": "images/oppose_kde_plot.png",
+    "description": "Percent growth ao the amount of Abortion Clinics has grown more in Red states than Blue states."
   },
   {
     "title": "Task Management System",
