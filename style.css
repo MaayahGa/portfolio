@@ -321,3 +321,46 @@ a:hover {
   display: block;
   margin-inline: auto;
 }
+
+/* Step 2: Pie Chart Container  */
+.pie-container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-block: 2em;
+  padding: 1.5em;
+  border: 1px solid oklch(85% 3% 200);
+  border-radius: 0.75em;
+  background-color: oklch(from var(--color-accent) 97% 3% h);
+}
+
+/* Legend  */
+.legend {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 1em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.swatch {
+  width: 1em;
+  height: 1em;
+  background-color: var(--color);
+  border-radius: 0.25em;
+  display: inline-block;
+}
+
+.legend em {
+  color: oklch(50% 3% 200);
+  font-style: normal;
+  font-size: 0.9em;
+}
