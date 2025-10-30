@@ -312,3 +312,12 @@ a:hover {
   margin: 0;
   font-size: 1.5rem;
 }
+
+/* D3 Pie Chart */
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+  display: block;
+  margin-inline: auto;
+}
