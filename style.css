@@ -389,6 +389,24 @@ a:hover {
   color: oklch(60% 3% 200);
 }
 
+/* Dark mode search bar */
+@media (prefers-color-scheme: dark) {
+  .searchBar {
+    background-color: oklch(20% 3% 200);
+    color: oklch(95% 3% 200);
+    border-color: oklch(40% 3% 200);
+  }
+  
+  .searchBar::placeholder {
+    color: oklch(60% 3% 200);
+  }
+  
+  .searchBar:focus {
+    background-color: oklch(25% 3% 200);
+    border-color: var(--color-accent);
+  }
+}
+
 #projects-pie-plot path {
   cursor: pointer;
   transition: 300ms;
