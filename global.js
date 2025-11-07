@@ -23,7 +23,6 @@ const BASE_PATH =
 let nav = document.createElement("nav");
 document.body.prepend(nav);
 
-// Helper to normalize paths for highlighting
 function normalize(path) {
   return path.replace(/index\.html$/, '').replace(/\/$/, '');
 }

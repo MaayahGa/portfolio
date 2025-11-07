@@ -112,6 +112,8 @@ function renderScatterPlot(data, commits) {
 
   svg.call(brush);
 
+  svg.selectAll('.dots, .overlay ~ *').raise();
+
   function isCommitSelected(selection, commit) {
     if (!selection) return false;
     const [[x0, y0], [x1, y1]] = selection;
