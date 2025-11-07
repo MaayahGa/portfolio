@@ -1,6 +1,5 @@
 console.log("IT’S ALIVE!");
 
-
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
@@ -11,6 +10,7 @@ let pages = [
   { url: "projects/", title: "Projects" },
   { url: "contact/", title: "Contact" },
   { url: "cv/", title: "CV" },
+  { url: "Meta/", title: "Meta" },
   { url: "Gabriel Maayah - Resume.pdf", title: "Resume" },
   { url: "https://github.com/MaayahGa", title: "GitHub" },
 ];
@@ -23,6 +23,11 @@ const BASE_PATH =
 let nav = document.createElement("nav");
 document.body.prepend(nav);
 
+// Helper to normalize paths for highlighting
+function normalize(path) {
+  return path.replace(/index\.html$/, '').replace(/\/$/, '');
+}
+
 for (let i = 0; i < pages.length; i++) {
   let p = pages[i];
   let url = p.url.startsWith("http") ? p.url : BASE_PATH + p.url;
@@ -31,16 +36,15 @@ for (let i = 0; i < pages.length; i++) {
   a.href = url;
   a.textContent = p.title;
 
-  // Highlight page
+  // Highlight page: normalize paths so /Meta/ matches /Meta/index.html
   a.classList.toggle(
     "current",
-    a.host === location.host && a.pathname === location.pathname
+    a.host === location.host && normalize(a.pathname) === normalize(location.pathname)
   );
 
   a.toggleAttribute("target", a.host !== location.host);
 
   nav.append(a);
-
   if (i < pages.length - 1) nav.insertAdjacentText("beforeend", " | ");
 }
 
@@ -62,8 +66,19 @@ document.body.insertAdjacentHTML(
 const select = document.querySelector(".color-scheme select");
 
 function setColorScheme(scheme) {
-  document.documentElement.style.setProperty("color-scheme", scheme);
+  document.documentElement.classList.remove('dark');
+
+  if (scheme === 'dark') {
+    document.documentElement.classList.add('dark');
+  } else if (scheme === 'light dark') {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.classList.add('dark');
+    }
+  }
+
   select.value = scheme;
+
+  document.documentElement.style.setProperty("color-scheme", scheme.includes('dark') ? 'dark' : 'light');
 }
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -77,7 +92,6 @@ select.addEventListener("input", (event) => {
   setColorScheme(value);
   localStorage.colorScheme = value;
 });
-
 
 //Contact updates
 const form = document.querySelector("form.contact-form");
@@ -95,7 +109,7 @@ form?.addEventListener("submit", function (event) {
   location.href = url;
 });
 
-//Fethc and Render
+// Fetch and Render
 export async function fetchJSON(url) {
   try {
     const response = await fetch(url);

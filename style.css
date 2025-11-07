@@ -428,3 +428,140 @@ a:hover {
   background-color: oklch(from oklch(60% 45% 0) 95% 10% h);
   font-weight: bold;
 }
+
+/* Meta Stuff */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 8px 24px;
+  align-items: start;
+  max-width: 640px;
+  margin: 0.5rem 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.stats dt {
+  font-weight: 600;
+  color: #333; /* light mode */
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.stats dd {
+  margin: 0;
+  color: #111; /*light mode */
+  font-size: 1.05rem;
+}
+
+/* Dark mode */
+html.dark .stats dt,
+html.dark .stats dd {
+  color: white;
+}
+
+.gridlines line {
+  stroke: #ccc;
+  stroke-dasharray: 2 2;
+}
+
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.2em 1em;
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #111;
+  background: white;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: 200ms;
+}
+
+dl.info dt {
+  font-weight: 600;
+  color: #555;
+}
+
+dl.tooltip {
+  position: fixed;
+  z-index: 10;
+  pointer-events: none;
+}
+
+dl.info[hidden]:not(:hover) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+/* Scatterplot container */
+#chart {
+  width: 100%;
+  max-width: 1000px;
+  margin: 1rem auto;
+}
+
+/* Tooltip for commits */
+#tooltip {
+  position: fixed;
+  pointer-events: none;
+  background-color: oklch(95% 3% 200);
+  color: oklch(10% 3% 200);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  z-index: 10;
+  display: none;
+}
+
+/* Highlight selected dots */
+circle.selected {
+  stroke: var(--color-accent);
+  stroke-width: 2px;
+  fill-opacity: 1 !important;
+}
+
+/* Brush selection rectangle */
+.brush .selection {
+  fill: var(--color-accent);
+  fill-opacity: 0.2;
+  stroke: var(--color-accent);
+  stroke-width: 1px;
+}
+
+/* Selection info containers */
+#selection-count {
+  margin: 1rem 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#language-breakdown {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+  gap: 0.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+#language-breakdown dt {
+  font-weight: bold;
+  color: var(--color-accent);
+}
+
+#language-breakdown dd {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+}
