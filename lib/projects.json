@@ -2,15 +2,15 @@
     {
     "title": "Alaska, The Fastest Warming State",
     "year": 2025,
-    "image": "images/Screenshot 2025-11-14 at 8.30.14 PM",
-    "description": "Demonstrates the change in average temperture of month throughout Alaska and States in the U.S. to show how quickly Alaska is warming up.",
+    "image": "images/alaska.png",
+    "description": "Demonstrates the change in average temperture of month throughout Alaska and States in the U.S. to show how quickly Alaska is warming up.(https://maayahga.github.io/DSC106_Project_3/)",
     "url": "https://maayahga.github.io/DSC106_Project_3/"
   },
   {
     "title": "Boston Biking Monitor",
     "year": 2025,
-    "image": "images/Screenshot 2025-11-14 at 8.23.37 PM",
-    "description": "Interactive visualization that shows the density of bikes in Boston and which Bike stops are most busy at what tiems",
+    "image": "images/bikers.png",
+    "description": "Interactive visualization that shows the density of bikes in Boston and which Bike stops are most busy at what tiems.(https://maayahga.github.io/bikewatching/)",
     "url": "https://maayahga.github.io/bikewatching/"
   },
   {
