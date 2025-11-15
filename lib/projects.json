@@ -1,4 +1,18 @@
 [
+    {
+    "title": "Alaska, The Fastest Warming State",
+    "year": 2025,
+    "image": "images/Screenshot 2025-11-14 at 8.30.14 PM",
+    "description": "Demonstrates the change in average temperture of month throughout Alaska and States in the U.S. to show how quickly Alaska is warming up.",
+    "url": "https://maayahga.github.io/DSC106_Project_3/"
+  },
+  {
+    "title": "Boston Biking Monitor",
+    "year": 2025,
+    "image": "images/Screenshot 2025-11-14 at 8.23.37 PM",
+    "description": "Interactive visualization that shows the density of bikes in Boston and which Bike stops are most busy at what tiems",
+    "url": "https://maayahga.github.io/bikewatching/"
+  },
   {
     "title": "Democratic States Have had a Larger Growth Rate in Abortions",
     "year": 2025,
@@ -58,17 +72,5 @@
     "year": 2024,
     "image": "images/download.png",
     "description": "Personal finance management app that helps users track expenses, set budgets, and analyze spending habits."
-  },
-  {
-    "title": "Inventory Management System",
-    "year": 2022,
-    "image": "images/download.png",
-    "description": "Database-driven system for tracking product inventory, orders, and supply chain logistics."
-  },
-  {
-    "title": "Recipe Finder Website",
-    "year": 2023,
-    "image": "images/download.png",
-    "description": "A web app that suggests recipes based on available ingredients using an external recipe API."
   }
 ]
