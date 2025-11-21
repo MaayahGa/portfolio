@@ -137,69 +137,49 @@
 </head>
 <body>
   <main>
-    <section id="stats-container">
-      <h1>Repository summary</h1>
-      <div id="stats"></div>
-    </section>
+  <section id="stats-container">
+    <h1>Repository summary</h1>
+    <div id="stats"></div>
+  </section>
 
-    <!-- Time Slider -->
-    <div class="slider-container">
-      <label>
-        Show commits until:
-        <input type="range" id="commit-progress" min="0" max="100" value="100" />
-        <time id="commit-time"></time>
-      </label>
-    </div>
+  <!-- Time Slider -->
+  <div class="slider-container">
+    <label>
+      Show commits until:
+      <input type="range" id="commit-progress" min="0" max="100" value="100" />
+      <time id="commit-time"></time>
+    </label>
+  </div>
 
-    <!-- Scrollytelling section -->
-    <div id="scrolly-1">
-      <div id="scatter-story">
-        <!-- Story steps will be generated here -->
-      </div>
-      <div id="scatter-plot">
-        <section id="chart-container">
-          <h2>Commits by time of day</h2>
-          <!-- SVG for scatterplot -->
-          <svg id="scatterplot" width="800" height="500"></svg>
-          <!-- Selected commit count -->
-          <p id="selection-count">No commits selected</p>
-          <!-- Language breakdown of selected commits -->
-          <dl id="language-breakdown" class="stats"></dl>
-          <!-- Tooltip for hovering -->
-          <div id="tooltip" class="tooltip"></div>
-        </section>
-      </div>
-    </div>
-
-    <!-- File visualization (moved to bottom) -->
-    <section id="files-container">
-      <h2>Files</h2>
-      <dl id="files">
-        <!-- File visualization will be rendered here -->
-      </dl>
-    </section>
-
-    <section id="debug">
-      <h2>Console preview</h2>
-      <pre id="preview"></pre>
-    </section>
-
-    <!-- Original commit info tooltip (can keep if you want both) -->
-    <dl id="commit-tooltip" class="info tooltip" hidden>
-      <dt>Commit</dt>
-      <dd>
-        <a href="" id="commit-link" target="_blank"></a>
-      </dd>
-      <dt>Date</dt>
-      <dd id="commit-date"></dd>
-      <dt>Time</dt>
-      <dd id="commit-time"></dd>
-      <dt>Author</dt>
-      <dd id="commit-author"></dd>
-      <dt>Lines edited</dt>
-      <dd id="commit-lines"></dd>
+  <!-- File visualization moved ABOVE scatterplot -->
+  <section id="files-container">
+    <h2>Files</h2>
+    <dl id="files">
+      <!-- File visualization will be rendered here -->
     </dl>
-  </main>
+  </section>
+
+  <!-- Scrollytelling section -->
+  <div id="scrolly-1">
+    <div id="scatter-story">
+      <!-- Story steps will be generated here -->
+    </div>
+    <div id="scatter-plot">
+      <section id="chart-container">
+        <h2>Commits by time of day</h2>
+        <svg id="scatterplot" width="800" height="500"></svg>
+        <p id="selection-count">No commits selected</p>
+        <dl id="language-breakdown" class="stats"></dl>
+        <div id="tooltip" class="tooltip"></div>
+      </section>
+    </div>
+  </div>
+
+  <section id="debug">
+    <h2>Console preview</h2>
+    <pre id="preview"></pre>
+  </section>
+</main>
   <script src="../global.js" type="module"></script>
   <script type="module" src="main.js"></script>
 </body>
